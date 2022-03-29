@@ -1,12 +1,27 @@
 package com.finnegans.PedidosIvan.entity;
 
+import org.springframework.context.annotation.Primary;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "productos")
 public class Producto {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_producto")
     private Integer idProducto;
+
+    @Column(name = "precio")
     private Float precioBase;
+
     private Float impuesto;
+
     private String nombre;
+
     private String descripcion;
+
     private Integer cantidad;
 
     public Producto() {
