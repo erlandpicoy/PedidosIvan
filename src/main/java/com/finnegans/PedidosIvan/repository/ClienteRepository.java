@@ -1,10 +1,10 @@
 package com.finnegans.PedidosIvan.repository;
 
-import com.finnegans.PedidosIvan.entity.Producto;
+import com.finnegans.PedidosIvan.entity.Cliente;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 @Repository
-public interface ProductoRepository extends JpaRepository<Producto, Integer> {
+public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
 }

@@ -22,19 +22,16 @@ public class Producto {
 
     private String descripcion;
 
-    private Integer cantidad;
-
     public Producto() {
     }
 
 
-    public Producto(Integer idProducto, Float precioBase, Float impuesto, String nombre, String descripcion, Integer cantidad) {
+    public Producto(Integer idProducto, Float precioBase, Float impuesto, String nombre, String descripcion) {
         this.idProducto = idProducto;
         this.precioBase = precioBase;
         this.impuesto = impuesto;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.cantidad = cantidad;
     }
 
     public Integer getIdProducto() {
@@ -77,13 +74,6 @@ public class Producto {
         this.descripcion = descripcion;
     }
 
-    public Integer getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(Integer cantidad) {
-        this.cantidad = cantidad;
-    }
 
     @Override
     public String toString() {
@@ -93,7 +83,7 @@ public class Producto {
                 ", impuesto=" + impuesto +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
-                ", cantidad=" + cantidad +
+
                 '}';
     }
 }

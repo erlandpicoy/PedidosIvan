@@ -1,8 +1,16 @@
 package com.finnegans.PedidosIvan.entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "clientes")
 public class Cliente {
 
-    private String idCliente;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_cliente")
+    private Integer idCliente;
+
     private String nombre;
     private String apellido;
     private Integer dni;
@@ -11,7 +19,7 @@ public class Cliente {
 
     }
 
-    public Cliente(String idCliente, String nombre, String apellido, Integer dni) {
+    public Cliente(Integer idCliente, String nombre, String apellido, Integer dni) {
         this.idCliente = idCliente;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -42,11 +50,11 @@ public class Cliente {
         this.dni = dni;
     }
 
-    public String getIdCliente() {
+    public Integer getIdCliente() {
         return idCliente;
     }
 
-    public void setIdCliente(String idCliente) {
+    public void setIdCliente(Integer idCliente) {
         this.idCliente = idCliente;
     }
 
