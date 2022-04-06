@@ -4,8 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 En este proyecto se utilizo Spring Boot y demas frameworks, ademas de conectar hacia un motor de base de datos Microsoft SQL Server 2019, desde ya, para el Front se utilizo Angular para la vista de tablas y demas
 
+JAVA 1.8
+MVN en su ultima version.
 
-## Para el inicio del servidor node
+
+## Para el inicio del servidor tomcat
 Importar desde un IDE un proyecto, importarlo como un proyecto maven.
 Descargar las dependencias del pom.xml desde maven corriendo desde la raiz del proyecto: mvn install
 
